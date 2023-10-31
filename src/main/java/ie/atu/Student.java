@@ -12,6 +12,12 @@ public class Student {
         this.course = "";
     }
 
+    public Student(String name){
+        this.name=name;
+        this.email=getStudentemail();
+        this.course=getStudentcourse();
+    }
+
     public void setStudentName(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter your Full Name");
@@ -19,6 +25,7 @@ public class Student {
     }
 
     public String getStudentName(){
+
         return name;
     }
 
@@ -29,6 +36,7 @@ public class Student {
     }
 
     public String getStudentemail(){
+
         return email;
     }
 
@@ -39,6 +47,7 @@ public class Student {
     }
 
     public String getStudentcourse() {
+
         return course;
     }
 
